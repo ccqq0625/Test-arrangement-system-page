@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据备份</title>
+
+    <link rel="stylesheet" type="text/css" href="../frame/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../frame/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/college.css">
+    <link rel="stylesheet" type="text/css" href="../frame/bootstrap-table-master/src/bootstrap-table.css">
+
+
+    <script src="../frame/jquery/jquery-3.3.1.js"></script>
+    <script src="../frame/bootstrap-table-master/src/bootstrap-table.js"></script>
+    <script src="../frame/bootstrap-table-master/src/locale/bootstrap-table-zh-CN.js"></script>
+</head>
+<body>
+<div class="content col-sm-12">
+    <div>
+        <div>
+            <p class="frameTitle">&nbsp;&nbsp;编排管理&nbsp;&nbsp;
+                <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;数据备份&nbsp;&nbsp;
+            </p>
+        </div>
+    </div>
+    <hr class="hr1"/>
+
+
+    <div class="panel-body" style="padding-bottom:0px;">
+    <div class="panel">
+        <div class="panel-heading query" >数据备份</div>
+        <div class="panel-body">
+            <form id="formSearch" class="form-horizontal">
+                <div class="form-group" style="margin-top:15px">
+                    <label class="control-label col-sm-1" for="txt_search_mes">备份的数据:</label>
+                    <div class="col-sm-2">
+                        <select class="form-control" id="txt_search_mes">
+                            <option disabled selected>请选择</option>
+                            <option>基础数据-学员信息</option>
+                            <option>基础数据-考场信息</option>
+                            <option>基础数据-教师信息</option>
+                            <option>基础数据-课程信息</option>
+                            <option>基础数据-考试信息</option>
+                            <option>基础数据-考试费用信息</option>
+                            <option>编排管理-教学任务信息</option>
+                            <option>编排管理-考场设置信息</option>
+                            <option>编排管理-考场编排信息</option>
+                            <option>编排管理-监考教师信息</option>
+                            <option>编排管理-报表管理信息</option>
+                            <option>考试信息管理-教学任务信息</option>
+                            <option>考试信息管理-考场状态</option>
+                            <option>缺考与违纪管理-缺考违纪信息</option>
+                            <option>缺考与违纪管理-违纪处理</option>
+                            <option>考试管理评价</option>
+                            <option>用户管理-教务处账号备份</option>
+                            <option>用户管理-系院账号备份</option>
+                        </select>
+                    </div>
+                    <label class="control-label col-sm-1">日期:</label>
+                    <div class="col-sm-2">
+                        <input type="date" class="col-sm-12" style="height:32px">
+                    </div>
+                    <div class="col-sm-3" style="text-align:left;">
+                        <button type="button" class="btn btn-primary bakeup">
+                            数据备份
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

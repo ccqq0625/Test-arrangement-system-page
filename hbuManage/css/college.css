@@ -1,0 +1,50 @@
+.content{
+    height: 100vh;
+    padding-top: 2vh;
+    background-color: rgba(33, 0, 212, 0.06);
+}
+.contentUl li{
+    width: 100%;
+    list-style-type: none;
+    font-size:2.6vh;
+}
+.frameTitle{
+    font-size:2.5vh;
+    color: #1E9FFF;
+}
+.hr1{
+   border: 1px solid #579fff;
+}
+.query{
+    background-color: #0db8c5;
+}
+.queryDiv{
+    font-size: 2vh;
+    height: 5vh;
+    margin: 0 auto;
+}
+
+input{
+    background:none;
+    outline:none;
+    border:1px solid #1E9FFF;
+}
+input:focus { outline: none; }
+.collegeCheck{
+   width: 14vw;
+   height: 5vh;
+   margin: 0 auto;
+   border-radius: 8px;
+   font-size: 2vh;
+}
+.info{
+    background-color: #0db8c5;
+}
+.printForm{
+    float: right;
+}
+
+.form-group label{
+    font-size: 1.8vh;
+    font-weight: 400;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teacher</title>
+    <link rel="stylesheet" type="text/css" href="../frame/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../frame/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/college.css">
+    <link rel="stylesheet" type="text/css" href="../frame/bootstrap-table-master/src/bootstrap-table.css">
+
+
+    <script src="../frame/jquery/jquery-3.3.1.js"></script>
+    <script src="../frame/bootstrap-table-master/src/bootstrap-table.js"></script>
+    <script src="../frame/bootstrap-table-master/src/locale/bootstrap-table-zh-CN.js"></script>
+</head>
+<body>
+<div class="content col-lg-12 col-md-12 col-sm-12">
+    <div>
+        <p class="frameTitle">&nbsp;&nbsp;编排管理&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true">&nbsp;&nbsp;短信提醒</i></p>
+    </div>
+    <hr class="hr1"/>
+    <!--<div class="queryDiv col-lg-6 col-sm-6 col-md-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">-->
+    <!--<label>学院信息查询:</label>&nbsp;<input type="text" class="collegeCheck">&nbsp;<i class="fa fa-search" aria-hidden="true"></i>-->
+    <!--</div>-->
+
+    <div class="panel-body" style="padding-bottom:0px;">
+        <div class="panel">
+            <div class="panel-heading query" >设置</div>
+            <div class="panel-body">
+                <form id="formSearch" class="form-horizontal">
+                    <div class="form-group" style="margin: 15px 0 auto;">
+                        <div class="col-sm-12">
+                        <label class="control-label col-sm-2" style="margin-bottom: 6px">发送时间:</label>
+                        <div class="col-sm-2">
+                            <input type="date" id="messageDate" min=newDate()>
+                        </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="col-sm-12">
+                        <label class="control-label col-sm-2" >短信内容:</label>
+                        <textarea  id="messageCon" class="col-sm-3" rows="6"></textarea>
+                        <div class="col-sm-12">
+                            <div class="col-sm-5" style="text-align:center;margin-top: 20px">
+                               <button type="button"  id="btn_query" class="btn btn-primary">确定</button>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

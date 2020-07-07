@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>notice</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="../frame/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../frame/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../frame/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../frame/swiper/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/notice.css">
+
+    <!--js-->
+    <script src="../frame/jquery/jquery-3.3.1.js"></script>
+    <script src="../frame/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="../js/index.js"></script>
+
+</head>
+<body>
+<div class="content col-lg-12 col-md-12 col-sm-12">
+
+    <!--<div class="swiper-container col-lg-12 col-md-12 col-sm-12">-->
+    <!--<div class="swiper-wrapper">-->
+        <!--<div class="swiper-slide"><img src="../images/0.jpg"></div>-->
+        <!--<div class="swiper-slide"><img src="../images/1.jpg"></div>-->
+        <!--<div class="swiper-slide"><img src="../images/2.jpg"></div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;分页器&ndash;&gt;-->
+    <!--<div class="swiper-pagination"></div>-->
+    <!--&lt;!&ndash; 如果需要导航按钮 &ndash;&gt;-->
+    <!--<div class="swiper-button-prev"></div>-->
+    <!--<div class="swiper-button-next"></div>-->
+<!--</div>-->
+    <div class="panel noticePanel">
+        <div class="panel-heading notice">
+            <h2 class="panel-title noticeTitle">
+                <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>&nbsp;通知公告
+            </h2>
+        </div>
+        <div class="panel-body noticeContent">
+            <ul class="contentUl">
+                <li><i class="fa fa-chevron-circle-right fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;湖北文理学院考务系统教师使用手册
+                    <div class="tol" style="float: right">
+                        <a href="noticeChange.html"><span><i class="fa fa-pencil" aria-hidden="true"></i>修改</span></a>
+                        <span><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+                    </div>
+                    <span class="noticeDate">[2019-03-10]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+                </li>
+                <li><i class="fa fa-chevron-circle-right fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;湖北文理学院考务系统公告
+                    <div class="tol" style="float: right">
+                        <a href="noticeChange.html"><span><i class="fa fa-pencil" aria-hidden="true"></i>修改</span></a>
+                        <span><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+                    </div>
+                    <span class="noticeDate">[2019-03-14]&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<!--js部分-->
+<script src="../frame/swiper/js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    })
+</script>
+</body>
+</html>
