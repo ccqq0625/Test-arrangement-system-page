@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="../css/college.css">-->
+    <link rel="stylesheet" type="text/css" href="../js/bootstrap.min.js">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="https://cdn.bootcss.com/popper.js/1.15.0/esm/popper-utils.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#top-menu-li").click(function () {
+            $("#liMenu").slideToggle();
+        });
+    });
+
+</script>
+    <script>
+
+    </script>
+    <style>
+        .clear:after{
+            content: " ";
+            display: block;
+            overflow: hidden;
+            clear: both;
+        }
+        .client{
+            position: absolute;
+            bottom: 0;
+            right: 3%;
+
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .nav_title{
+        font-size: 2vh;
+        text-align: center;
+        line-height: 3vh;
+        font-family: "微软雅黑 Light";
+        background-color: rgb(245, 245, 245);
+        }
+        li {
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+<body style="background-color: rgba(33, 0, 212, 0.06);">
+<nav class="navbar navbar-fixed-top col-lg-12 col-md-12 col-sm-12" style="background: #31b0d5">
+    <div class="container">
+        <div class="navbar-header">
+            <div style="float: left"><p class="title" style="color: white;font-family: 楷体;font-size: 30px;margin-left: 15px">湖北文理学院考务管理系统</p></div>
+            <div style="float: right;color: white" class="client clear">
+                <i></i><span class="glyphicon glyphicon-user"></span>&nbsp;用户名:<span>Admin</span>&nbsp;
+                <a href="" style="color: white"><span class="glyphicon glyphicon-share">退出登录</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--<div class="" style="margin-top: 50px">-->
+    <!--<div class="panel-heading col-lg-3" style="background: navy blue;">-->
+    <!--<div class="panel-heading nav_title">-->
+    <!--&lt;!&ndash;<img src="../img/hbwllogo.png">&nbsp;导航栏菜单&ndash;&gt;-->
+    <!--导航栏菜单-->
+    <!--</div>-->
+        <!--<div class="panel-body panel-group">-->
+            <!--<div class="panel">-->
+                <!--<div class="panel-heading" style="background-color: navy blue">-->
+                    <!--<h4 class="panel-title"><a href="#collapseOne" data-toggle="collapse"  data-parent="#big">第一部分按钮链接</a></h4>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+<!--</div><br>-->
+    <aside class="panel panel-body col-lg-2" style="float: left;margin:55px 0 0 0;height: 92vh;background-color: #e3efed;font-size: 5px;padding:0 0 0 0">
+        <div class="panel-heading nav_title" style="padding: 10px;margin-top: 15px">
+            <!--<img src="../img/hbwllogo.png">&nbsp;导航栏菜单-->
+            导航栏菜单
+        </div>
+        <div class="panel-group aslidebar" id="accordion">
+            <div class="sub-menu panel">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="panTitle">
+                            <span class="glyphicon glyphicon-home" style="color: rgb(0, 6, 0);"></span>&nbsp;首页管理
+                        </a>
+                    </div>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse menu">
+                    <ul>
+                        <li id="noticeChange"><span>通知公告管理</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub-menu panel">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="panTitle">
+                            <span class="glyphicon glyphicon-list" style="color: rgb(0, 4, 6);"></span>&nbsp;基础数据
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse menu">
+                    <div>
+                        <ul>
+                            <li id="college"><i></i><span>学院信息</span></li>
+                            <li id="basicRoom"><i></i><span>考场信息</span></li>
+                            <li id="basicTeacher"><i></i><span>教师信息</span></li>
+                            <li id="basicCourse"><i></i><span>课程信息</span></li>
+                            <li id="basicTest"><i></i><span>考试信息</span></li>
+                            <li id=""><i></i><span>考试费用管理</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sub-menu panel">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="panTitle">
+                            <span class="glyphicon glyphicon-credit-card" style="color: rgb(0, 4, 6);"></span>&nbsp;学生信息管理
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse menu">
+                    <div>
+                        <ul>
+                            <li><a href=""><i></i><span>考生数据导入</span></a></li>
+                            <li><a href=""><i></i><span>导入照片包</span></a></li>
+                            <li><a href=""><i></i><span>导出照片包</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-menu panel">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="panTitle">
+                            <span class="glyphicon glyphicon-subtitles" style="color: rgb(0, 4, 6);"></span>&nbsp;编排管理
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse menu">
+                    <div>
+                        <ul class="sub">
+                            <li id="teachingTask"><i></i><span>教学任务管理</span></li>
+                            <li id="room"><i></i><span>考场设置</span></li>
+                            <li id="exroom"><i></i><span>考场编排</span></li>
+                            <li id="teacher"><i></i><span>监考教师管理</span></li>
+                            <li id="message"><i></i><span>短信提醒</span></li>
+                            <li><a data-toggle="collapse" href="#menuTwo"><i></i><span>报表管理</span></a>
+                                <div id="menuTwo" class="panel-collapse collapse">
+                                    <ul class="menuSlide">
+                                        <li id="Examinee">考生名册</li>
+                                        <li id="doorForm">门贴表</li>
+                                        <li id="deskForm">桌贴表</li>
+                                        <li id="ticket">准考证</li>
+                                        <li id="otherForm">其他表</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="sub-menu panel">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" class="panTitle">
+                            <span class="glyphicon glyphicon-pencil" style="color: rgb(0, 4, 6);"></span>&nbsp;考试信息管理
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse menu">
+                    <div>
+                        <ul class="sub">
+                            <li id="beforeTeachingTask"><i></i><span>教学任务管理</span></li>
+                            <li id="roomCondition"><i></i><span>考场状态</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-menu panel">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseS" class="panTitle">
+                            <span class="glyphicon glyphicon-dashboard" style="color: rgb(0, 4, 6);"></span>&nbsp;缺考与违纪管理
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseS" class="panel-collapse collapse menu">
+                    <div>
+                        <ul class="sub">
+                            <li id="ImportInfringementInfor"><i></i><span>缺考违纪信息导入</span></li>
+                            <li id="infringementInfo"><i></i><span>缺考违纪信息</span></li>
+                            <li id="discipline"><i></i><span>违纪处理</span></li>
+                            <li id="printStastics"><i></i><span>数据打印</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-menu panel">
+                <div class="panel-heading">
+                    <h4 class="panel-title" id="comment">
+                        <a data-toggle="collapse" data-parent="#accordion" class="panTitle">
+                            <span class="glyphicon glyphicon-ok" style="color: rgb(0, 4, 6);"></span>&nbsp;考试管理评价
+                        </a>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="sub-menu panel">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" class="panTitle">
+                            <span class="glyphicon glyphicon-cog">系统管理
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSeven" class="panel-collapse collapse menu">
+                    <div>
+                        <ul class="sub">
+                            <li><a data-toggle="collapse" href="#menuOne"><i></i><span>用户管理</span></a>
+                                <div id="menuOne" class="panel-collapse collapse">
+                                    <ul class="menuSlide">
+                                        <li id="deanAccount">教务处账号</li>
+                                        <li id="collegeAccount">系院账号</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="bakeup"><i></i><span>数据备份</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<div class="content col-lg-10 col-md-10 col-sm-10" style="margin: 50px 0 0 0;float: left;box-sizing: border-box;padding: 0 0 0 0">
+
+    <iframe id="content-box" src="notice.html" width="100%" frameborder="0" height="100%">
+
+    </iframe>
+
+
+</div>
+
+</body>
+</html>
